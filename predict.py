@@ -1,6 +1,7 @@
 # Python script for inferencing images on model
 import os
 import argparse
+import cv2
 
 # initiate the parser
 parser = argparse.ArgumentParser()
@@ -11,7 +12,22 @@ intro = "\n\n*************************\n*                       *\n*    Welcome 
 print(intro)
 
 ls = os.listdir(args.inputs)
-ls = [os.path.join(args.inputs,f) for f in ls if os.path.isfile(os.path.join(args.inputs,f))]
+ls = [f for f in ls if os.path.isfile(os.path.join(args.inputs,f))]
 
-print("Converting:")
+print("These files will be labelled:")
 print(ls)
+
+# Create output directory
+try:
+    os.mkdir("output_data")
+except OSError:
+    print("Either your output_data folder already exists, or it broke.")
+
+print("\n ***********************")
+print(" *      Labelling      *")
+print(" ***********************\n")
+
+for img_file in ls:
+    img = cv2.imread(os.path.join(args.inputs,img_file))
+    status = cv2.imwrite(os.path.join("output_data",img_file),img)
+    print(" > Labelled '"+img_file+"'")
