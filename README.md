@@ -5,20 +5,14 @@ Predict corn.
 
 ```
 .
-+-- example_labels
-|   +-- Label Demo - 1.png
-|   +-- Label Demo - 2.png
-|   +-- ...
-+-- mp4
-|   +-- 2ft
-|   |   +-- GOPRO165.MP4
-|   |   +-- GOPRO166.MP4
-|   |       ...
-|   +-- 4ft
-|   |   +-- GOPRO388.MP4
-|   |   +-- GOPRO389.MP4
-|   |       ...
-+-- jpg
++-- data
+|   +-- GOPRO165.MP4
+|   +-- GOPRO166.MP4
+|       ...
+|   +-- GOPRO388.MP4
+|   +-- GOPRO389.MP4
+|       ...
+|       ...
 |   +-- GOPRO165_01.jpg
 |   +-- GOPRO165_02.jpg
 |       ...
