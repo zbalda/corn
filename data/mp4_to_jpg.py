@@ -18,6 +18,6 @@ for r, d, f in os.walk("./"):
             print(filepath)
 
             # generate image sequence and save as jpg images
-            command = "ffmpeg -i " + filepath + " -vf fps=" + fps + " jpg/" + name + "_%02d.jpg"
-            output = os.system(command)
-            print(output)
+            #command = "ffmpeg -i " + filepath + " -vf fps=" + fps + " jpg/" + name + "_%02d.jpg"
+            #output = os.system(command)
+            #print(output)
