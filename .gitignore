@@ -1,2 +1,4 @@
-data/
+data/jpg/
+data/mp4/
+data/example_labels/
 keras-frcnn/keras_frcnn/__pycache__/

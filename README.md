@@ -3,8 +3,6 @@ Predict corn.
 
 ## Data
 
-TODO: keras-frcnn only accepts `.jpg`. We need to convert all `.PNG` to `.jpg`.
-
 ```
 .
 +-- example_labels
@@ -20,27 +18,19 @@ TODO: keras-frcnn only accepts `.jpg`. We need to convert all `.PNG` to `.jpg`.
 |   |   +-- GOPRO388.MP4
 |   |   +-- GOPRO389.MP4
 |   |       ...
-+-- png
-|   +-- 2ft
-|   |   +-- GOPRO165
-|   |   |   +-- GOPRO16501.png
-|   |   |   +-- GOPRO16502.png
-|   |   |       ...
-|   |   +-- GOPRO166
-|   |   |   +-- GOPRO16601.png
-|   |   |   +-- GOPRO16602.png
-|   |   |       ...
-|   |       ...
-|   +-- 4ft
-|   |   +-- GOPRO388
-|   |   |   +-- GOPRO38801.png
-|   |   |   +-- GOPRO38802.png
-|   |   |       ...
-|   |   +-- GOPRO389
-|   |   |   +-- GOPRO38901.png
-|   |   |   +-- GOPRO38902.png
-|   |   |       ...
-|   |       ...
++-- jpg
+|   +-- GOPRO165_01.jpg
+|   +-- GOPRO165_02.jpg
+|       ...
+|   +-- GOPRO166_01.jpg
+|   +-- GOPRO166_02.jpg
+|       ...
+|   +-- GOPRO388_01.jpg
+|   +-- GOPRO388_02.jpg
+|       ...
+|   +-- GOPRO389_01.jpg
+|   +-- GOPRO389_02.jpg
+|       ...
 ```
 
 ## How to Train
@@ -66,6 +56,6 @@ Output images will automatically be saved to an "outputs" folder.
 
 ## Tools
 
-- [VGG Image Annotator (VIA)](www.robots.ox.ac.uk/~vgg/software/via/)
+- [labelme](https://github.com/wkentaro/labelme)
 - [keras-frcnn](https://github.com/kbardool/keras-frcnn)
 - [FFmpeg](https://www.ffmpeg.org/)
