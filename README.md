@@ -45,7 +45,7 @@ Predict corn.
 
 At path `~/corn/keras-frcnn/` run:
 
-`python train_frcnn.py -o simple -p training/.txt`
+`python train_frcnn.py -o simple -p training/example_labels.txt`
 
 
 ## How to Inference
