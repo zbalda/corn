@@ -3,6 +3,8 @@ Predict corn.
 
 ## Data
 
+TODO: keras-frcnn only accepts `.jpg`. We need to convert all `.PNG` to `.jpg`.
+
 ```
 .
 +-- example_labels
@@ -45,8 +47,12 @@ Predict corn.
 
 At path `~/corn/keras-frcnn/` run:
 
-`python train_frcnn.py -o simple -p ../annotations/example_annotations.txt`
+`python train_frcnn.py -o simple -p example_annotations.txt`
 
+Note: `example_annotations.txt` seems to only work with absolute paths. I used absolute paths for my system, but obviously this won't work for others.
+
+TODO: Create a "base_annotations.txt" with relative paths and a Python script that converts relative paths to absolute paths given a "base path".
+- e.g. converts 'path/to/file.jpg' to '/home/zbalda/path/to/file.jpg' for base path "home/zbalda/"
 
 ## How to Inference
 
