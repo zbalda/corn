@@ -1,4 +1,3 @@
-/home/zbalda/GitHub/corn/data/jpg/image.jpg,111,222,333,444,corn
-/home/zbalda/GitHub/corn/data/jpg/image.jpg,111,222,333,444,corn
-/home/zbalda/GitHub/corn/data/jpg/image.jpg,111,222,333,444,corn
-/home/zbalda/GitHub/corn/data/jpg/image.jpg,111,222,333,444,corn
+/home/zbalda/GitHub/corn/data/GOPRO165_10.jpg,111,222,333,444,corn
+/home/zbalda/GitHub/corn/data/GOPRO165_11.jpg,111,222,333,444,corn
+/home/zbalda/GitHub/corn/data/GOPRO453_12.jpg,111,222,333,444,corn

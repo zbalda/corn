@@ -3,12 +3,6 @@ import subprocess
 
 fps = "1"
 
-# create directory
-try:
-    os.mkdir("jpg")
-except FileExistsError:
-    print("Directory 'jpg' already exists")
-
 for r, d, f in os.walk("./"):
     for file in f:
         if '.MP4' in file:
