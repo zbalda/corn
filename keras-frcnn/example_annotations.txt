@@ -1,4 +1,4 @@
-/home/zbalda/GitHub/corn/data/wallpaper.jpg,111,222,333,444,corn
-/home/zbalda/GitHub/corn/data/wallpaper.jpg,111,222,333,444,notcorn
-/home/zbalda/GitHub/corn/data/wallpaper.jpg,111,222,333,444,alsocorn
-/home/zbalda/GitHub/corn/data/wallpaper.jpg,111,222,333,444,corn
+/home/zbalda/GitHub/corn/data/jpg/image.jpg,111,222,333,444,corn
+/home/zbalda/GitHub/corn/data/jpg/image.jpg,111,222,333,444,corn
+/home/zbalda/GitHub/corn/data/jpg/image.jpg,111,222,333,444,corn
+/home/zbalda/GitHub/corn/data/jpg/image.jpg,111,222,333,444,corn
