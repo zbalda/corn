@@ -45,7 +45,7 @@ Predict corn.
 
 At path `~/corn/keras-frcnn/` run:
 
-`python train_frcnn.py -o simple -p training/example_labels.txt`
+`python train_frcnn.py -o simple -p ../annotations/example_annotations.txt`
 
 
 ## How to Inference
@@ -62,3 +62,4 @@ Output images will automatically be saved to an "outputs" folder.
 
 - [VGG Image Annotator (VIA)](www.robots.ox.ac.uk/~vgg/software/via/)
 - [keras-frcnn](https://github.com/kbardool/keras-frcnn)
+- [FFmpeg](https://www.ffmpeg.org/)
