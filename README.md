@@ -21,22 +21,22 @@ Predict corn.
 +-- png
 |   +-- 2ft
 |   |   +-- GOPRO165
-|   |   |   +-- GOPRO165_01.png
-|   |   |   +-- GOPRO165_02.png
+|   |   |   +-- GOPRO16501.png
+|   |   |   +-- GOPRO16502.png
 |   |   |       ...
 |   |   +-- GOPRO166
-|   |   |   +-- GOPRO166_01.png
-|   |   |   +-- GOPRO166_02.png
+|   |   |   +-- GOPRO16601.png
+|   |   |   +-- GOPRO16602.png
 |   |   |       ...
 |   |       ...
 |   +-- 4ft
 |   |   +-- GOPRO388
-|   |   |   +-- GOPRO388_01.png
-|   |   |   +-- GOPRO388_02.png
+|   |   |   +-- GOPRO38801.png
+|   |   |   +-- GOPRO38802.png
 |   |   |       ...
 |   |   +-- GOPRO389
-|   |   |   +-- GOPRO389_01.png
-|   |   |   +-- GOPRO389_02.png
+|   |   |   +-- GOPRO38901.png
+|   |   |   +-- GOPRO38902.png
 |   |   |       ...
 |   |       ...
 ```
