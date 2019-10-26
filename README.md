@@ -6,47 +6,47 @@ Predict corn.
 ```
 .
 +-- data
+|   +-- GOPRO165_01.jpg
+|   +-- GOPRO165_01.json
+|   +-- GOPRO165_02.jpg
+|   +-- GOPRO165_02.json
+|       ...
 |   +-- GOPRO165.MP4
+|   +-- GOPRO166_01.jpg
+|   +-- GOPRO166_01.json
+|       ...
+|   +-- GOPRO166_18.jpg
+|   +-- GOPRO166_18.json
 |   +-- GOPRO166.MP4
 |       ...
-|   +-- GOPRO388.MP4
-|   +-- GOPRO389.MP4
-|       ...
-|       ...
-|   +-- GOPRO165_01.jpg
-|   +-- GOPRO165_02.jpg
-|       ...
-|   +-- GOPRO166_01.jpg
-|   +-- GOPRO166_02.jpg
-|       ...
-|   +-- GOPRO388_01.jpg
-|   +-- GOPRO388_02.jpg
-|       ...
-|   +-- GOPRO389_01.jpg
-|   +-- GOPRO389_02.jpg
 |       ...
 ```
 
+To generate JPG
+
 ## How to Train
 
-At path `~/corn/keras-frcnn/` run:
+At path `~/keras-frcnn/` run:
 
-`python train_frcnn.py -o simple -p example_annotations.txt`
+`python train_frcnn.py -o simple -p annotations.txt`
 
-Note: `example_annotations.txt` seems to only work with absolute paths. I used absolute paths for my system, but obviously this won't work for others.
-
-TODO: Create a "base_annotations.txt" with relative paths and a Python script that converts relative paths to absolute paths given a "base path".
-- e.g. converts 'path/to/file.jpg' to '/home/zbalda/path/to/file.jpg' for base path "home/zbalda/"
+Note: replace annotations.txt with actual annotations file
 
 ## How to Inference
 
-At path `~/corn/inference/` run:
+At path `~/inference/` run:
 
 `predict.py -inputs=<path_to_inputs>`
 
 Inputs should be a folder of images to label.
 
 Output images will automatically be saved to an "outputs" folder.
+
+## Converting JSON Annotations to .txt Format
+
+Annotations were done with [labelme](https://github.com/wkentaro/labelme) which saves a json file for each annotated image (at `/data/`). The keras-frcnn model accepts a single .txt file which has a specific format. To generate a single .txt file from the json files, navigate to `~/data/` and run the script we created:
+
+`python json_to_txt.py`
 
 ## Tools
 
