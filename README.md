@@ -1,6 +1,12 @@
 # corn
 Predict corn.
 
+#### Members
+
+- Zachary Balda
+- Brandon Boynton
+- Laurent Valle
+
 ## Data
 
 ```
@@ -22,11 +28,9 @@ Predict corn.
 |       ...
 ```
 
-To generate JPG
-
 ## How to Train
 
-At path `~/keras-frcnn/` run:
+At path `/keras-frcnn/` run:
 
 `python train_frcnn.py -o simple -p annotations.txt`
 
@@ -34,19 +38,41 @@ Note: replace annotations.txt with actual annotations file
 
 ## How to Inference
 
-At path `~/inference/` run:
+Place images in `/keras-frcnn/test_images/`
 
-`predict.py -inputs=<path_to_inputs>`
+At path `/keras-frcnn/` run:
 
-Inputs should be a folder of images to label.
+`python test_frcnn.py -p test_images`
 
-Output images will automatically be saved to an "outputs" folder.
+Outputs are saved to `/keras-frcnn/results_images/`
 
-## Converting JSON Annotations to .txt Format
+Note: Images must be .jpg format
 
-Annotations were done with [labelme](https://github.com/wkentaro/labelme) which saves a json file for each annotated image (at `/data/`). The keras-frcnn model accepts a single .txt file which has a specific format. To generate a single .txt file from the json files, navigate to `~/data/` and run the script we created:
+
+## Converting MP4 Videos to .jpg Image Sequences
+
+The keras-frcnn model only accepts .jpg images. To convert MP4 videos to .jpg image sequences put all MP4 videos in `/data/` and run the script we created:
+
+`python mp4_to_jpg.py`
+
+Set `fps` in `mp4_to_jpg.py` to choose number of frames per second (default `1`)
+
+## Converting JSON Annotations to .txt File
+
+Annotations were done with [labelme](https://github.com/wkentaro/labelme) which saves a json file for each annotated image (at `/data/`). The keras-frcnn model accepts a single .txt file which has a specific format. To generate a single .txt file from the json files, navigate to `/data/` and run the script we created:
 
 `python json_to_txt.py`
+
+## Dependencies
+
+- pandas
+- matplotlib
+- tensorflow
+- keras – 2.0.3
+- numpy
+- opencv-python
+- sklearn
+- h5py
 
 ## Tools
 

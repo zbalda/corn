@@ -1,5 +1,7 @@
 *.jpg
 *.MP4
 *.png
+*.hdf5
+*.h5
 /keras-frcnn/annotations*
 keras-frcnn/keras_frcnn/__pycache__/

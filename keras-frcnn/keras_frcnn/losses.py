@@ -3,6 +3,10 @@ from keras.objectives import categorical_crossentropy
 
 if K.image_dim_ordering() == 'tf':
 	import tensorflow as tf
+	config = tf.ConfigProto()
+	config.gpu_options.allow_growth = True
+	sess = tf.Session(config=config)
+	K.set_session(sess)
 
 lambda_rpn_regr = 1.0
 lambda_rpn_class = 1.0
