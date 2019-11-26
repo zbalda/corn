@@ -16,8 +16,8 @@ from keras_frcnn import losses as losses
 import keras_frcnn.roi_helpers as roi_helpers
 from keras.utils import generic_utils
 
-number_of_epochs = 250 # 2000
-epoch_length = 100 # 1000
+number_of_epochs = 300 # 2000
+epoch_length = 200 # 1000
 
 sys.setrecursionlimit(40000)
 
